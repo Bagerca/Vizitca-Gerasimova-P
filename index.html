@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Визитка</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 85%;
+            max-width: 350px;
+        }
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #fff;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            color: #333;
+            margin: 0;
+        }
+        p {
+            color: #666;
+            margin-top: 5px;
+            margin-bottom: 25px;
+        }
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .btn {
+            display: block;
+            padding: 12px;
+            text-decoration: none;
+            color: white;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+        .btn:active {
+            transform: scale(0.98);
+        }
+        /* Цвета кнопок */
+        .tg { background-color: #0088cc; }
+        .inst { background-color: #E1306C; }
+        .wa { background-color: #25D366; }
+        .save { background-color: #333; margin-top: 10px;}
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <!-- ССЫЛКА НА ФОТО (можно вставить ссылку из соцсетей или загрузить файл в репозиторий) -->
+        <img src="https://via.placeholder.com/150" alt="Avatar" class="avatar">
+        
+        <!-- ИМЯ И ДОЛЖНОСТЬ -->
+        <h1>Иван Иванов</h1>
+        <p>Фотограф & Дизайнер</p>
+
+        <div class="links">
+            <!-- ССЫЛКИ (Замени # на реальные ссылки) -->
+            <a href="https://t.me/yourusername" class="btn tg">Telegram</a>
+            <a href="https://instagram.com/yourusername" class="btn inst">Instagram</a>
+            <a href="https://wa.me/79990000000" class="btn wa">WhatsApp</a>
+            
+            <!-- Кнопка сохранения контакта (об этом ниже) -->
+            <!-- <a href="contact.vcf" class="btn save">Сохранить контакт</a> -->
+        </div>
+    </div>
+
+</body>
+</html>

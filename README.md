@@ -1,1 +1,0 @@
-# Vizitca-Gerasimova-P.
